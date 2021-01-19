@@ -15,25 +15,25 @@ namespace LibraryManagement.Controllers
             return "All books fetched successfully";
         }
 
-        [Route("book/{bookId}/details")]
+        [Route("{bookId}/details")]
         public string GetBookDetais(int bookId)
         {
             return "Book details fetched successfully";
         }
 
-        [Route("add/book")]
+        [Route("add")]
         public string PostBook(Book book)
         {
             return "Book added successfully";
         }
 
-        [Route("update/book/{bookId}")]
+        [Route("update/{bookId}")]
         public string PutBook(int bookId, Book book)
         {
             return "Book updated successfully";
         }
 
-        [Route("delete/book/{bookId}")]
+        [Route("delete/{bookId}")]
         public string DeleteBook(int bookId)
         {
             return "Book deleted successfully";
