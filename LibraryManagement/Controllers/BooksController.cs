@@ -27,13 +27,13 @@ namespace LibraryManagement.Controllers
             return "Book added successfully";
         }
 
-        [Route("update/{bookId}")]
+        [Route("{bookId}/update")]
         public string PutBook(int bookId, Book book)
         {
             return "Book updated successfully";
         }
 
-        [Route("delete/{bookId}")]
+        [Route("{bookId}/delete")]
         public string DeleteBook(int bookId)
         {
             return "Book deleted successfully";
